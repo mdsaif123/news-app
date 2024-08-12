@@ -1,0 +1,189 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+
+}
+.btn-category button{
+  width: 120px;
+  border-radius: 20px;
+  margin: 5px;
+  background: transparent;
+  border: 1px solid rgb(193, 187, 187);
+  padding: 5px;
+  color: rgb(90, 77, 77);
+  font-size: 15px;
+ 
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.button {
+  width: 120px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  border: 3px solid rgb(255, 239, 94);
+  background-color: rgb(255, 239, 94);
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+}
+
+.text {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.arrow path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover .arrow {
+  -webkit-animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.button:active {
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+a{
+  text-decoration: none;
+  
+}
+/* =========================== */
+.search-box{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 320px;
+  height: 50px;
+  padding: 2px;
+  background-color: yellow;
+  border-radius: 35px;
+  padding-left: 20px;
+}
+.search-box input{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.search-box button{
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  height: 45px;
+  width: 160px;
+  border-radius: 25px;
+  font-size: 14px;
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
+
+@media screen and (max-width: 600px) {
+ .logo-img{
+width: 120px;
+padding-left: 10px;
+}
+.search-box{
+  width: 230px;
+}
+.search-box input{
+  width: 100px;
+}
+.search-box button{
+  width: 110px;
+  font-size: 10px;
+}
+.btn-category {
+  overflow-x: auto; /* Ensure horizontal scrolling */
+}
+.trending-news{
+  display: none;
+}
+}
