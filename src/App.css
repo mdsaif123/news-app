@@ -187,3 +187,23 @@ padding-left: 10px;
   display: none;
 }
 }
+
+.container.news-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  overflow-x: scroll; /* X axis par scroll allow karne ke liye */
+  white-space: nowrap; /* Content ko ek hi line mein rakhne ke liye */
+}
+
+.btn-category {
+  display: inline-block; /* Inline-block use karna zaroori hai taake buttons ek line mein hoon */
+}
+
+.cat-button {
+  margin: 5px;
+  padding: 10px 20px;
+  display: inline-block; /* Buttons ko inline-block banane ke liye */
+  white-space: nowrap;
+}

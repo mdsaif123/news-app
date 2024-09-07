@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import Newsapp from './Components/Newsapp';
 
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
   
       <Newsapp/>
+    
     </div>
   );
 }

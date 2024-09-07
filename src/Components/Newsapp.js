@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import logo from "../Components/logo.jpeg"
 
+
 const Newsapp = () => {
     const [search, setSearch] = useState('sports')
     const [newsData, setNewsdata] = useState([])
@@ -33,13 +34,13 @@ const Newsapp = () => {
 }, [])
     return (
         <div>
-            <div className="container-fluid mt-4">
+            <div className="container-fluid mt-4 ">
                 <nav>
                     <div>
                         <img className='logo-img' src={logo} alt="" />
                     </div>
                     <div>
-                        <h3 className='trending-news'>Trending News <span className='badge bg-dark'> 24x7</span></h3>
+                        <h3 className='trending-news'>Trending News <span className='badge bg-danger'> 24x7</span></h3>
                     </div>
                     <div className='search-box'>
                         <input type="text" onChange={handleinput} value={search} placeholder='Search...' />
@@ -49,7 +50,7 @@ const Newsapp = () => {
                 <hr />
             </div>
 
-            <div className="container">
+            <div className="container news-category">
                 <div className="btn-category text-center ">
                     <button className=' cat-button ' onClick={() => handleCategoryClick('sports')}>Sports</button>
                     <button className=' cat-button ' onClick={() => handleCategoryClick('business')}>Business</button>
@@ -64,6 +65,8 @@ const Newsapp = () => {
             <div className="container">
                 <Card data={newsData} />
             </div>
+
+            
         </div>
     )
 }
